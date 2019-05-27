@@ -18,7 +18,10 @@ const wheather=(data,callback)=>
             {
                 location:data.place,
                 temperature:res.body.currently.temperature,
-                probability:res.body.currently.precipProbability
+                probability:res.body.currently.precipProbability,
+                tempHigh:res.body.daily.data[0].temperatureHigh,
+                tempLow:res.body.daily.data[0].temperatureLow,
+                summary:res.body.currently.summary
             }) 
         }
     });

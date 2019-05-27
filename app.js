@@ -65,7 +65,10 @@ app.get("/help",(req,res)=>{
              res.send({
                  location:temp.location,
                  temperature:temp.temperature,
-                 probability:temp.probability
+                 probability:temp.probability,
+                 tempHigh:temp.tempHigh,
+                 tempLow:temp.tempLow,
+                 summary:temp.summary
              })
          
      })  

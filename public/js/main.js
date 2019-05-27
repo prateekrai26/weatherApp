@@ -25,7 +25,7 @@ fetch(url).then((res)=>
         else
         {
           loc.textContent=data.location;
-          temp.textContent="The Temperature at " + data.location + " is " + data.temperature + " Degree Celcius" + "And  The Possibilty of Rain is " + data.probability + "%."
+          temp.textContent="Today's Weather is " +data.summary +  " And The Current Temperature at " + data.location + " is " + data.temperature + " Degree Celcius " + "And  The Possibilty of Rain is " + data.probability + "%. Today's Maximum Temperature is " + data.tempHigh + " Degree Celcius And Minimum Temperature is " + data.tempLow + " Degree Celcius ." 
         }
     })
   })
