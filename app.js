@@ -6,7 +6,8 @@ const express=         require("express");
       viewPath=        path.join(__dirname+'/templates/views'),
       partialsPath=    path.join(__dirname+'/templates/partials'),
       geocode=         require("./utils/geocode"),
-      wheather=        require("./utils/wheather");
+      wheather=        require("./utils/wheather"),
+      port=            process.env.PORT || 3000;
 
 
 
@@ -80,6 +81,6 @@ app.get("/help",(req,res)=>{
  
  
 
-app.listen(3000,()=>{
-    console.log("Server Started")
+app.listen(port,()=>{
+    console.log("Server Started on Port" + port)
 })
